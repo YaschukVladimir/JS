@@ -3,6 +3,11 @@ let buttonMin = document.getElementById('button-min');
 let buttonMult = document.getElementById('button-mult');
 let buttonDel = document.getElementById('button-del');
 
+buttonPlus.addEventListener('click', onButtonPlusClick);
+buttonMin.addEventListener('click', onButtonMinClick);
+buttonMult.addEventListener('click', onButtonMultClick);
+buttonDel.addEventListener('click', onButtonDelClick);
+
 function onButtonPlusClick() {
     let input1 = document.getElementById('number1');
     let input2 = document.getElementById('number2');
@@ -44,7 +49,3 @@ function onButtonDelClick() {
     alert(del);
 }
 
-buttonPlus.addEventListener('click', onButtonPlusClick);
-buttonMin.addEventListener('click', onButtonMinClick);
-buttonMult.addEventListener('click', onButtonMultClick);
-buttonDel.addEventListener('click', onButtonDelClick);
